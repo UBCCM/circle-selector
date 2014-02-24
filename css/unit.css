@@ -1,0 +1,33 @@
+.block {
+	height: 800px;
+}
+.block:nth-child(even) { 
+	background: #000000;
+}
+
+ul.circle li {
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+ul.circle a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background: yellow;
+}
+
+.block.collapse {
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.block.collapse .circle li{
+	height: 60px;
+	width: 60px;
+}
+
