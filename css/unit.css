@@ -9,6 +9,10 @@ ul.circle li {
 	display: inline-block;
 	height: 300px;
 	width: 300px;
+	
+	-webkit-transition: height 0.8s, width 0.8s;
+	-moz-transition:  height 0.8s, width 0.8s;
+	transition:  height 0.8s, width 0.8s
 }
 
 ul.circle a {
@@ -17,6 +21,7 @@ ul.circle a {
 	width: 100%;
 	border-radius: 50%;
 	background: yellow;
+	
 }
 
 .block.collapse {
@@ -25,9 +30,12 @@ ul.circle a {
 	position: fixed;
 	top: 0;
 	left: 0;
+	-webkit-transition: height 0.8s;
+	-moz-transition: height 0.8s;
+	transition: height 0.8s;
 }
 .block.collapse .circle li{
 	height: 60px;
-	width: 60px;
+	width: 60px;;
 }
 
