@@ -2,7 +2,7 @@
 	var pos = $(".circle").offset().top;
 	
 	$(window).scroll(function() {
-		if ($(window).scrollTop()+400 > pos) {
+		if ($(window).scrollTop()-100 > pos) {
 			$(".target").addClass("collapse");
 		}
 		else {
