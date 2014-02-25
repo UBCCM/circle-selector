@@ -4,11 +4,19 @@
 .block:nth-child(even) { 
 	background: #000000;
 }
+.three {
+	margin-top: 170px; /** 100px from JS + 70px from height of .collapse **/
+}
+
+ul {
+	max-width: 1170px;
+	margin: 0 auto; 
+}
 
 ul.circle li {
 	display: inline-block;
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	
 	-webkit-transition: height 0.8s, width 0.8s;
 	-moz-transition:  height 0.8s, width 0.8s;
@@ -21,7 +29,7 @@ ul.circle a {
 	width: 100%;
 	border-radius: 50%;
 	background: yellow;
-	
+
 }
 
 .block.collapse {
@@ -33,6 +41,10 @@ ul.circle a {
 	-webkit-transition: height 0.8s;
 	-moz-transition: height 0.8s;
 	transition: height 0.8s;
+}
+.block.collapse ul {
+	max-width: none;
+	margin: 0;
 }
 .block.collapse .circle li{
 	height: 60px;
